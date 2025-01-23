@@ -69,16 +69,16 @@ products.forEach(function (elem) {
     current.style.zIndex = zIndex++;
 
 
-    current.style.left = `${(touch.clientX - rect.width) / 2}px`;
-    current.style.top = `${(touch.clientY - rect.height) / 2}px`;
+    current.style.left = `${touch.clientX}px`;
+    current.style.top = `${touch.clientY}px`;
   });
 
   elem.addEventListener('touchmove', function (e) {
     e.preventDefault();
     const touch = e.touches[0];
 
-    current.style.left = `${(touch.clientX - current.offsetWidth) / 2}px`;
-    current.style.top = `${(touch.clientY - current.offsetHeight) / 2}px`;
+    current.style.left = `${touch.clientX}px`;
+    current.style.top = `${touch.clientY}px`;
   });
 
 
