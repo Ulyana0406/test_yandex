@@ -7,9 +7,9 @@ const basketThree = document.querySelector('.basket-three');
 const btnPay = document.querySelector('.btn-pay');
 const basket = document.querySelector('.basket');
 const produktsInBasket = {
-  basketOne: ['wine', 'milk', 'cake', 'chese'],
-  basketTwo: ['beef', 'checken', 'cheeps'],
-  basketThree: ['pineapple', 'banana', 'aple', 'salad']
+  basketOne: ['wine', 'milk', 'cake', 'cheese'],
+  basketTwo: ['beef', 'chicken', 'cheeps'],
+  basketThree: ['pineapple', 'banana', 'apple', 'salad']
 };
 
 let current = null;
@@ -63,13 +63,11 @@ products.forEach(function (elem) {
     const touch = e.touches[0];
     current = this;
 
-
-    const rect = current.getBoundingClientRect();
-    current.style.position = 'absolute';
+    current.style.position = 'fixed';
     current.style.zIndex = zIndex++;
 
-
-    current.style.left = `${touch.clientX}px`;
+    current.style.transform = `translate(-50%, -50%)`;
+    current.style.left = `${touch.clientX }px`;
     current.style.top = `${touch.clientY}px`;
   });
 
@@ -86,6 +84,7 @@ products.forEach(function (elem) {
     const touch = e.changedTouches[0];
     const basketRect = basket.getBoundingClientRect();
 
+    current.style.transform = '';
 
     if (
       touch.clientX > basketRect.left &&

@@ -45,7 +45,7 @@
   left: 103px;
 }
 
-.chese {
+.cheese {
   position: absolute;
   left: 158px;
 }
@@ -101,7 +101,7 @@
   position: static;
 }
 
-.basket-one .chese {
+.basket-one .cheese {
   display: block;
   position: static;
 }
@@ -118,11 +118,10 @@
   left: 7px;
 }
 
-.checken {
+.chicken {
   position: absolute;
   left: 58px;
   top: -53px;
-  /*transform: rotate(-15deg);*/
 }
 
 .cheeps {
@@ -135,7 +134,7 @@
   position: static;
 }
 
-.basket-two .checken {
+.basket-two .chicken {
   display: block;
   position: static;
 }
@@ -162,7 +161,7 @@
   left: 58px;
 }
 
-.aple {
+.apple {
   position: absolute;
   left: 115px;
 }
@@ -182,7 +181,7 @@
   position: static;
 }
 
-.basket-three .aple {
+.basket-three .apple {
   display: block;
   position: static;
 }
@@ -264,9 +263,6 @@
   display: block;
 }
 
-/*.btn-pay:hover {*/
-/*  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);*/
-/*}*/
 
 .btn-pay:active {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);
